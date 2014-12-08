@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/* CSS Document */
+/*** GENERAL & RESET STYLES ***/ 
+
+@font-face {
+    font-family: 'NewJuneRegular';
+    src: url('../fonts/newjune-regular-webfont.eot');
+    src: url('../fonts/newjune-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/newjune-regular-webfont.woff') format('woff'),
+         url('../fonts/newjune-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NewJuneBoldRegular';
+    src: url('../fonts/newjune-bold-webfont.eot');
+    src: url('../fonts/newjune-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/newjune-bold-webfont.woff') format('woff'),
+         url('../fonts/newjune-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MGHeroMedium';
+    src: url('../fonts/mghero-medium-webfont.eot');
+    src: url('../fonts/mghero-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mghero-medium-webfont.woff') format('woff'),
+         url('../fonts/mghero-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+	font-family: 'NewJuneRegular', Arial, Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	color: #000;
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
+ul, li, h1, h2, h3, a, p, div, img, input, object, iframe {
+	/*float:left;*/
+	margin:0; 
+	padding:0;
+	outline:none;
+	border: none;
+	position:relative;
+	-webkit-appearance: none;
+}
+
+ul, li { list-style:none; }
+
+/*** PROJECT SPECIFIC STYLES ***/ 
+/* titles */
+h1, h2, h3, a, input[type="submit"] { 
+	font-family:'MGHeroMedium', sans-serif; 
+	/*text-transform:uppercase;*/
+	font-weight:normal;
+}
+
+h3 {
+	color:#fff;
+	padding:24px 40px;
+	font-size:42px;
+	line-height:42px;
+}
+
+/* main containers */
+.container {
+	width:100%;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	overflow: hidden;
+}
+
+.container { position: relative; }
+
+.gif {
+	position: absolute;
+	image-rendering:optimizeSpeed;            
+	image-rendering:-moz-crisp-edges;          
+	image-rendering:-o-crisp-edges;            
+	image-rendering:-webkit-optimize-contrast; 
+	image-rendering:optimize-contrast;
+	width: 100%;
+	height: 100%;
+	left:   0;
+	top:    0;
+}
+
+/* header */
+.header {
+	position:absolute;
+	width: 100%;
+	top:32px;
+	left:0px;
+}
+
+.tweet {
+	width: 40%;
+}
+
+.header h1 {
+	color:#fff;
+	line-height:82px;	
+	font-size:82px;
+	padding:6px 0px 0px 40px;
+}
+
+
+.hashtag {
+	position: fixed;
+	bottom: 50px;
+	/*color: #F8981D;*/
+}
+
+.shadow {
+	text-shadow: 1px 1px 10px #000;
+}
+
+
+.clear {
+	clear: both;
+}

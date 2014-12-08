@@ -1,0 +1,18 @@
+{
+  "name": "prophetholiday",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "3.0.0",
+    "jade": "*",
+    "twit": "^1.1.18",
+    "socket.io": "0.9.11"
+  },
+  "engines": {
+    "node": "0.8.4",
+    "npm": "1.1.41"
+  }
+}
